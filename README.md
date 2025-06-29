@@ -22,6 +22,85 @@ A modern, interactive personal portfolio website showcasing my experience as a S
 
 Visit: [https://sainathpawar.github.io](https://sainathpawar.github.io)
 
+Here’s a clean and professional **Markdown format** you can copy-paste into your existing `README.md` file. You can place it under a relevant section like **Installation** or **Amazon Q Developer CLI Setup**.
+
+### 🚀 Installing Amazon Q Developer CLI on Windows (via WSL)
+
+> **Note**: Amazon Q Developer CLI does **not** support native Windows installation. It requires using **Windows Subsystem for Linux (WSL)**.
+
+#### Step 1: Set up WSL
+
+1. Open **PowerShell as Administrator**.
+2. Run the following command to install WSL and the default Ubuntu distribution:
+
+   ```bash
+   wsl --install
+   ```
+
+   To install a specific distribution:
+
+   ```bash
+   wsl --install -d <Distro>
+   ```
+3. Restart your computer if prompted.
+4. Verify installation:
+
+   ```bash
+   wsl -l -v
+   ```
+
+#### Step 2: Install Amazon Q Developer CLI inside WSL
+
+1. Open the **Ubuntu terminal** (or your installed WSL distribution).
+2. Install `unzip`:
+
+   ```bash
+   sudo apt install unzip
+   ```
+3. Download the Amazon Q CLI ZIP:
+
+   ```bash
+   curl --proto '=https' --tlsv1.2 -sSf https://desktop-release.codewhisperer.us-east-1.amazonaws.com/latest/q-x86_64-linux-musl.zip -o q.zip
+   ```
+4. Unzip the archive:
+
+   ```bash
+   unzip q.zip
+   ```
+5. Navigate to the directory:
+
+   ```bash
+   cd q
+   ```
+6. Make the installer executable:
+
+   ```bash
+   chmod +x install.sh
+   ```
+7. Run the installer:
+
+   ```bash
+   ./install.sh
+   ```
+8. Restart WSL.
+
+#### Step 3: Verify & Authenticate
+
+1. Open a **new WSL terminal**.
+2. Check CLI health:
+
+   ```bash
+   q doctor
+   ```
+3. Log in with your AWS Builder ID or Pro license:
+
+   ```bash
+   q login
+   ```
+4. Follow the prompts in your browser to complete authentication.
+
+✅ You are now ready to use **Amazon Q Developer CLI** inside your WSL environment on Windows.
+
 ## 📁 Project Structure
 
 ```
@@ -100,13 +179,6 @@ To update your information:
 - Debounced scroll events
 - Lazy loading for better performance
 - Mobile-first responsive design
-
-## 🤝 Contact
-
-- **GitHub**: [github.com/sainathpawar](https://github.com/sainathpawar)
-- **LinkedIn**: [linkedin.com/in/sainath-pawar](https://www.linkedin.com/in/sainath-pawar/)
-- **YouTube**: [NextGenAIwithSai](http://www.youtube.com/@NextGenAIwithSai)
-- **Medium**: [@s.pawar_28195](https://medium.com/@s.pawar_28195)
 
 ## 📄 License
 

@@ -22,8 +22,6 @@ A modern, interactive personal portfolio website showcasing my experience as a S
 
 Visit: [https://sainathpawar.github.io](https://sainathpawar.github.io)
 
-Here’s a clean and professional **Markdown format** you can copy-paste into your existing `README.md` file. You can place it under a relevant section like **Installation** or **Amazon Q Developer CLI Setup**.
-
 ## 🚀 Installing Amazon Q Developer CLI on Windows (via WSL)
 
 > **Note**: Amazon Q Developer CLI does **not** support native Windows installation. It requires using **Windows Subsystem for Linux (WSL)**.

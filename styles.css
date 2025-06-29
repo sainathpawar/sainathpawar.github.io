@@ -220,6 +220,7 @@ body {
 /* Section Styles */
 section {
     padding: 5rem 0;
+    scroll-margin-top: 100px; /* Account for fixed navbar */
 }
 
 .section-title {
@@ -246,6 +247,7 @@ section {
 /* About Section */
 .about {
     background-color: #f8fafc;
+    padding-top: 6rem; /* Extra padding to prevent overlap */
 }
 
 .about-content {
